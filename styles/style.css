@@ -7,29 +7,43 @@
 }
 
 .container{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 100vw;
 	height: 100vh;
 	background: url("../images/bg-pattern-bottom.svg") 50vw 50vh/750px no-repeat, url("../images/bg-pattern-top.svg") calc(-735px + 50vw) calc(-750px + 50vh)/750px no-repeat var(--dark-cyan);
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .card{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: relative;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	background-color: #FFF;
 	width: 325px;
 	height: 360px;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	border-radius: 15px; 
 	overflow: hidden;
 }
 
 .card__foto{
 	position: absolute;
-	background-color: #FFF;
+	background-color: #FFF
+	;
 	top: 25%;
 	border-radius: 50%;
 	padding: 5px;
@@ -63,14 +77,20 @@
 }
 
 .social{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
 	height: 80px;
 	position: absolute;
 	bottom: 0;
-	box-shadow: 0 -1px 1px -1px var(--dark-gray);
-	align-items: center;
-	justify-content: space-around;
+	-webkit-box-shadow: 0 -1px 1px -1px var(--dark-gray);
+	        box-shadow: 0 -1px 1px -1px var(--dark-gray);
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 .attribution { 
 	font-size: 11px;
