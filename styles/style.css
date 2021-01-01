@@ -10,7 +10,7 @@
 	display: flex;
 	width: 100vw;
 	height: 100vh;
-	background: url("../images/bg-pattern-bottom.svg") 170px 330px/650px no-repeat, url("../images/bg-pattern-top.svg") -435px -355px/650px no-repeat var(--dark-cyan);
+	background: url("../images/bg-pattern-bottom.svg") 50vw 50vh/750px no-repeat, url("../images/bg-pattern-top.svg") calc(-735px + 50vw) calc(-750px + 50vh)/750px no-repeat var(--dark-cyan);
 	justify-content: center;
 	align-items: center;
 }
@@ -44,7 +44,6 @@
 }
 
 .text--profile{
-	width: auto;
 	position: absolute;
 	top: 58%;
 }
@@ -80,14 +79,13 @@
 	bottom: 10px; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media (max-width: 1440px){
+@media (min-width: 720px){
 	.container{
-		background: url("../images/bg-pattern-bottom.svg") 680px 390px no-repeat, url("../images/bg-pattern-top.svg") -300px -490px no-repeat var(--dark-cyan);
+		background: url("../images/bg-pattern-bottom.svg") 50vw 50vh no-repeat, url("../images/bg-pattern-top.svg") calc(-1020px + 50vw) calc(-978px/2) no-repeat var(--dark-cyan);
 	}
 
 	.card{
 		width: 350px;
-		height: 360px;
 	}
 
 	.social{
