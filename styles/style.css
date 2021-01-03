@@ -42,14 +42,14 @@
 
 .card__foto{
 	position: absolute;
-	background-color: #FFF
-	;
-	top: 25%;
+	background-color: #FFF;
+	top: 24%;
 	border-radius: 50%;
 	padding: 5px;
 }
 
 .text{
+	width: 30%;
 	text-align: center;
 	margin: 10px 0;
 	font-family: 'Kumbh Sans', sans-serif;
@@ -58,8 +58,9 @@
 }
 
 .text--profile{
+	width: auto;
 	position: absolute;
-	top: 58%;
+	top: 55%;
 }
 
 .text__bold{
@@ -84,6 +85,7 @@
 	height: 90px;
 	position: absolute;
 	bottom: 0;
+	align-items: center;
 	-webkit-box-shadow: 0 -1px 1px -1px var(--dark-gray);
 	        box-shadow: 0 -1px 1px -1px var(--dark-gray);
 	-webkit-box-align: center;
@@ -93,6 +95,7 @@
 	    justify-content: space-around;
 }
 .attribution { 
+	width: auto;
 	font-size: 11px;
 	margin: 0;
 	position: absolute;
